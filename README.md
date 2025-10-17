@@ -69,9 +69,14 @@ A backend service for managing product catalogs with CSV upload, validation, and
 ```
 #### Request:
 ```bash
-  curl -X POST -F "file=@test-products.csv" http://localhost:8000/api/upload
+curl -X POST -F "file=@test-products.csv" http://localhost:8000/api/upload
 
 ```
+##### For Powershell use this command :
+```bash
+curl.exe -X POST -F "file=@test-products.csv" http://localhost:8000/api/upload
+```
+
 ### 2. List Products
 - Get all products with pagination.
 #### Endpoint:
